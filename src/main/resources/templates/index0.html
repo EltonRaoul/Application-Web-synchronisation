@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      
+<head>
+<meta charset="ISO-8859-1">
+<title>Liste des cites</title>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+	<div class = "header">		
+		<ul>
+		  <li><a class="active" href="#home">Accueil</a></li>
+		  <li><a href="#news">News</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="#about">About</a></li>
+		</ul>
+	</div>
+	
+	<div class = "sidebar">
+	
+	
+	</div>
+
+	<div class ="mainBody">
+	
+		<table>
+		  <tr>
+		    <th>id</th>
+		    <th>Nom Cite</th>
+		    <th>Reference Cite</th>
+		    <th>Date de creation</th>
+		  </tr>
+		  
+		  <tr th:each = "cite : ${listeCite}">
+		    <td th:text="${cite.idCite}">  </td>
+		    <td th:text="${cite.nomCite}">  </td>
+		    <td th:text="${cite.refCite}">   </td>
+		    <td th:text="${cite.createdAt}">   </td>
+		  </tr>
+		</table>
+		
+	</div>
+	
+	
+	<div class = "footer">
+	
+	
+	</div>
+	
+	
+</body>
+</html>
