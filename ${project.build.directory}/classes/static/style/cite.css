@@ -1,0 +1,107 @@
+.cite {
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+    height: 235px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.cite img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cite .img-section {
+    height: 200px;
+}
+
+.cite .info {
+    position: absolute;
+    background: white;
+    transition: 500ms;
+    overflow: hidden;
+    height: 45px;
+    bottom: -200px;
+}
+
+.cite:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+.cite .info label, .cite .info i {
+    font-weight: 500;
+    color: rgba(41, 47, 59, 0.99) !important;
+}
+
+.cite-title {
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-left: 10px;
+}
+
+.cite .info > div {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item label {
+    margin-bottom: 0;
+}
+
+.info-item:not(:last-child) {
+    border-right: 1px solid rgba(41, 47, 59, 0.22);
+}
+
+.info-item span {
+    top: 3px;
+    right: 10px;
+    position: absolute;
+    background-color: rgba(41, 47, 59, 0.51);
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.action button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    border: gray solid 1px;
+}
+
+.action button i {
+    display: inline;
+    font-size: 13px;
+}
+.edit-btn i{
+    font-size: 12px !important;
+}

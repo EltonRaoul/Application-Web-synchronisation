@@ -1,0 +1,11 @@
+main {
+    background-color: #f0f1f3;
+    min-height: calc(100vh - 130px);
+}
+
+.my-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+}

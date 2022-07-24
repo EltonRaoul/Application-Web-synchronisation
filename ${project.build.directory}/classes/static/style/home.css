@@ -1,0 +1,55 @@
+.item > div {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-option {
+    cursor: pointer;
+}
+
+.home-option:hover * {
+    color: #ff0000 !important;
+    transition: 600ms;
+}
+
+.home-option >div {
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px 2px rgba(162, 162, 162, 0.47);
+}
+
+.home-option i {
+    width: 50%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.notification .icon {
+    background-color: #cecece;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification .icon i {
+    font-size: 19px;
+}
+
+@media (min-width:768px) {
+    .notification {
+        height: 30px;
+    }
+}

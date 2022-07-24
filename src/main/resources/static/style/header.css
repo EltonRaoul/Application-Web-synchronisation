@@ -1,0 +1,68 @@
+.logo {
+    width: 39px;
+    height: 39px !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 0.5px none rgba(251, 16, 10, 0.7) !important;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 31px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.header-section {
+    padding-bottom: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header-section > div {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: start;
+    align-items: end !important;
+}
+
+.profile-section {
+    flex-direction: row;
+    display: flex;
+    max-width: 116px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile .icon {
+    font-size: 24px;
+    color: #555555;
+}
+
+notification {
+}
+
+.notification .item {
+}

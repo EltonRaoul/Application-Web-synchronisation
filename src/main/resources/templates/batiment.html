@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <section th:replace="layout :: shared_head"/>
+    <link th:href="@{/style/cite.css}" rel="stylesheet">
+</head>
+<body>
+<header th:replace="layout :: shared_header"/>
+<main class="text-body">
+    <div class="h-100 m-0 p-0 row">
+        <!--sidebar-->
+        <div th:replace="layout :: shared_sidebar"/>
+        <!--contend-->
+        <div class="col-12 col-md-10 h-100 pl-0 pl-md-4 pr-0 pr-md-4 pt-2">
+            <div class="container">
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
+                    eget
+                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <h3>Cite</h3>
+                <div class="position-relative">
+                    <div class="my-card">
+                        <div class="row m-0">
+                            <div class="col-lg-4 col-md-3 pb-2 pl-0 pl-md-2 pr-0 pr-md-2 pt-2">
+                                <div class="cite">
+                                    <div class="action">
+                                        <button class="delete">
+                                            <i class="fal fa-times"></i>
+                                        </button>
+                                        <button class="edit-btn">
+                                            <i class="fal fa-pencil"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="cite-title">
+                                        <h5>
+                                            Nom du batiment
+                                        </h5>
+                                    </div>
+                                    <div class="img-section">
+                                         <img th:src="@{/img/beautiful-hotel-with-many-apartments-in-mountain-resort.jpg}">
+                                    </div>
+
+                                    <div class="w-100 row m-0 info">
+                                        <div class="col-4 info-item">
+                                    <span>
+                                       553
+                                    </span>
+                                            <i class="fal fa-door-open"></i>
+                                            <label>Logement</label>
+                                        </div>
+                                        <div class="col-8 info-item">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button"
+                            class="add-btn align-items-center align-items-md-center border-light d-flex flex-row justify-content-center justify-content-md-center p-0"
+                            data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-plus" style="font-size: 20px; color: #fefefe;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="row m-0">
+        <div class="col-md-4 p-1">
+        </div>
+        <div class="col-md-4 p-1">
+        </div>
+        <div class="col-md-4 p-1">
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<section th:replace="layout :: shared_scripts"/>
+
+
+<!--modal-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ajouter un batiment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="add-form">
+                    <div class="form-group">
+                        <label for="nameInput">Nom<sup>*</sup></label>
+                        <input type="text" class="form-control" id="nameInput"
+                               name="nameInput"
+                               required
+                        >
+                        <small class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="reference">Reference<sup>*</sup></label>
+                        <input type="text" class="form-control"
+                               required
+                               name="reference"
+                               id="reference">
+                        <small class="text-danger"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Superficie en(m<sup>2</sup>)<sup>*</sup></label>
+                        <input type="text" class="form-control"
+                               name="area"
+                               required
+                               id="area">
+                        <small class="text-danger"></small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="submit()" class="btn btn-primary">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

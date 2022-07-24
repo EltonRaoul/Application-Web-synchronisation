@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<section th:fragment="shared_head">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blank Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0/css/bootstrap.min.css} "/>
+    <!-- Custom styles for this template -->
+    <link th:href="@{/style/header.css}" rel="stylesheet">
+    <link th:href="@{/style/nav.css}" rel="stylesheet">
+    <link th:href="@{/style/main.css}" rel="stylesheet">
+     <link th:href="@{/style/all.css}" rel="stylesheet}">
+    <link th:href="@{/font-awaesome/css/all.min.css}" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Liste des cites</title>
+</section>
+< !--hearder -- > 
+<header th:fragment="shared_header">
+    <div class="row m-0 header-section">
+        <div class="align-items-end col-12 col-md-3 d-flex flex-row justify-content-start">
+            <div class="logo">
+                <img th:src="@{/img/om.png}" width="200px" height="100px">
+            </div>
+            <h5 class="d-md-block d-none font-weight-bold mb-0" style="color: #ff5f5f;">MAISONNIER</h5>
+        </div>
+        <div class="col-12 col-md-4 d-md-block d-none">
+        </div>
+        <div class="col-12 col-md-5 d-md-flex d-none pr-3 pr-md-3">
+            <div class="notification-header">
+                <div class="mr-md-2 profile">
+                    <i class="fa-bell far text-muted"></i>
+                    <label>5</label>
+                </div>
+            </div>
+            <div class="profile-section">
+                <div class="mr-md-2 profile">
+                    <i class="fa-user-circle fas icon text-muted"></i>
+                </div>
+
+                <label class="font-weight-bold text-muted" style="color: #555555;">SAPTON</label>
+            </div>
+        </div>
+    </div>
+</header>
+< !--sidebar-- > 
+<div th:fragment="shared_sidebar" class="col-12 col-md-2 d-md-block d-none h-100 p-0">
+            <ul class="mb-0 my-nav pb-0">
+                <li>
+                    <a class="d-flex d-md-flex"> <i class="fal fa-home"></i> Acceuil</a>
+                </li>
+                <li class="sub-nav-parent">
+                    <a><i class="fal fa-briefcase"></i> gestions des actifs <i class="pl-2 fas fa-caret-down"></i> </a>
+                    <ul class="list-unstyled pl-3 sub-nav">
+                        <li>
+                            <a><i class="fa-city fal"></i> Cite</a>
+                        </li>
+                        <li>
+                            <a><i class="fa-hotel fal"></i> Batiment</a>
+                        </li>
+                        <li>
+                            <a><i class="fa-house-user fal"></i> Logement</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-nav-parent">
+                    <a><i class="fa-wallet fal"></i> Gestion Financiere <i class="pl-2 fas fa-caret-down"></i> </a>
+                    <ul class="list-unstyled pl-3 sub-nav">
+                        <li>
+                            <a><i class="fa-coins fal"></i> Depense</a>
+                        </li>
+                        <li>
+                            <a><i class="fa-city fal"></i> Cite</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a> <i class="fa-user-cog fal"></i> Mon compte</a>
+                </li>
+            </ul>
+        </div>
+        
+        <section th:fragment="shared_scripts">
+        <script th:src="@{/js/nav.js}"></script>
+        <script th:src="@{/js/formValidator.js}"></script>
+        <script th:src="@{/webjars/jquery/3.2.1/dist/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/2.5.4/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.6.0/js/bootstrap.min.js}"></script>
+	
+
+        </section>
+</html>
