@@ -10,6 +10,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
 @Table(name = "Cites")
 public class Cites {
@@ -22,13 +24,18 @@ public class Cites {
 		@Column(name = "idCite", updatable = false, nullable = false)
 	 	private UUID idCite;
 	    
+		@NotEmpty
 	    @Column(name = "nomCite")
 	    private String nomCite;
 	    
-	   
+		@NotEmpty
 	    @Column(name = "refCite")
 	    private String refCite;
 	    
+		@NotEmpty
+	    @Column(name = "area")
+	    private Number area;
+		
 	    @Column(name = "image")
 	    private String image = "";
 	    
